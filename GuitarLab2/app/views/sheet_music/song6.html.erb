@@ -1,0 +1,146 @@
+<table>
+<tr>
+   <td><button onclick="toggle('picture1')">C</button>
+      <div id="picture1" style="display:none"> <%= image_tag("C maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+        <audio src="<%= audio_path 'C Maj.mp3'%>" type="audio/mpeg" controls>
+            Your browser does not support the audio element.
+        </audio>
+      </div></td>
+
+      <td><button onclick="toggle('picture2')">G</button>
+         <div id="picture2" style="display:none"> <%= image_tag("G maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+           <audio src="<%= audio_path 'G Maj.mp3'%>" type="audio/mpeg" controls>
+               Your browser does not support the audio element.
+           </audio>
+         </div></td>
+
+         <td><button onclick="toggle('picture3')">Am</button>
+            <div id="picture3" style="display:none"> <%= image_tag("A min.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+              <audio src="<%= audio_path 'A min.mp3'%>" type="audio/mpeg" controls>
+                  Your browser does not support the audio element.
+              </audio>
+            </div></td>
+
+            <td><button onclick="toggle('picture4')">F</button>
+               <div id="picture3" style="display:none"> <%= image_tag("F maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+                 <audio src="<%= audio_path 'F Maj.mp3'%>" type="audio/mpeg" controls>
+                     Your browser does not support the audio element.
+                 </audio>
+               </div></td>
+
+               <td><button onclick="toggle('picture5')">D</button>
+                  <div id="picture5" style="display:none"> <%= image_tag("D min.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+                    <audio src="<%= audio_path 'D Min.mp3'%>" type="audio/mpeg" controls>
+                        Your browser does not support the audio element.
+                    </audio>
+                  </div></td>
+
+
+</tr>
+</table>
+<script>
+
+function toggle(id) {
+   var element = document.getElementById(id);
+    if(element.style.display == "none")
+       element.style.display = "block";
+    else
+       element.style.display = "none";
+}
+
+</script>
+
+
+
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+<pre>
+<span class="title"> Let It Be</span>
+
+
+[Intro]
+
+C G Am F C G
+F C Dm C
+
+[Verse 1]
+
+       C              G                 Am          F
+When I find myself in times of trouble, Mother Mary comes to me
+C                 G              F C Dm C
+Speaking words of wisdom, let it be
+
+    C             G                Am                F
+And in my hour of darkness, she is standing right in front of me
+C                 G              F C Dm C
+Speaking words of wisdom, let it be
+
+[Chorus]
+
+C      Am         G          F          C
+Let it be, let it be, let it be, let it be
+C                G              F C Dm C
+Whisper words of wisdom, let it be
+
+[Verse 2]
+
+    C               G               Am            F
+And when the broken hearted people, living in the world agree
+C                G              F C Dm C
+There will be an answer, let it be
+
+    C                  G                Am                  F
+But though they may be parted, there is still a chance that they may see
+C                G              F C Dm C
+There will be an answer, let it be
+
+[Chorus]
+
+C      Am         G          F          C
+Let it be, let it be, let it be, let it be
+C                G              F C Dm C
+There will be an answer, let it be
+C      Am         G          F          C
+Let it be, let it be, let it be, let it be
+C                G              F C Dm C
+Whisper words of wisdom, let it be
+
+[Instrumental]
+
+C G Am F C G
+F C Dm C
+
+[Chorus]
+
+C      Am         G          F          C
+Let it be, let it be, let it be, let it be
+C                G              F C Dm C
+Whisper words of wisdom, let it be
+
+[Verse 3]
+
+    C                 G                Am                 F
+And when the night is cloudy, there is still a light that shines on me
+C                 G            F C Dm C
+Shine on till tomorrow, let it be
+
+  C              G               Am          F
+I wake up to the sound of music, Mother Mary comes to me
+C                 G              F C Dm C
+Speaking words of wisdom, let it be
+
+[Chorus]
+
+C      Am         G          F          C
+Let it be, let it be, let it be, let it be
+C                G              F C Dm C
+There will be an answer, let it be
+
+C      Am         G          F          C
+Let it be, let it be, let it be, let it be
+C                G              F C Dm C  F Em Dm C
+Whisper words of wisdom, let it be
+
+
+</pre>
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+  <a href="https://www.youtube.com/watch?v=gijypDkEqUA" class="btn btn-info btn-block" id="menu-toggle" target="_blank">Video Tutorial</a>

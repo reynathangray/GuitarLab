@@ -1,0 +1,138 @@
+<table>
+<tr>
+   <td><button onclick="toggle('picture1')">D</button>
+      <div id="picture1" style="display:none"> <%= image_tag("D maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+        <audio src="<%= audio_path 'D Maj.mp3'%>" type="audio/mpeg" controls>
+            Your browser does not support the audio element.
+        </audio>
+      </div></td>
+
+         <td><button onclick="toggle('picture3')">A</button>
+            <div id="picture3" style="display:none"> <%= image_tag("A maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+              <audio src="<%= audio_path 'A Maj.mp3'%>" type="audio/mpeg" controls>
+                  Your browser does not support the audio element.
+              </audio>
+            </div></td>
+
+         <td><button onclick="toggle('picture5')">G</button>
+            <div id="picture5" style="display:none"> <%= image_tag("G maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+              <audio src="<%= audio_path 'G Maj.mp3'%>" type="audio/mpeg" controls>
+                  Your browser does not support the audio element.
+              </audio>
+            </div></td>
+
+               <td><button onclick="toggle('picture2')">C</button>
+                  <div id="picture2" style="display:none"> <%= image_tag("C maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+                    <audio src="<%= audio_path 'C Maj.mp3'%>" type="audio/mpeg" controls>
+                        Your browser does not support the audio element.
+                    </audio>
+                  </div></td>
+
+
+
+</tr>
+</table>
+<script>
+
+function toggle(id) {
+   var element = document.getElementById(id);
+    if(element.style.display == "none")
+       element.style.display = "block";
+    else
+       element.style.display = "none";
+}
+
+</script>
+
+
+
+
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+<pre>
+  <span class="title"> Sweet Child O' Mine</span>
+
+
+[Verse 1]
+
+D
+She's got a smile that it seems to me
+C
+Reminds me of childhood memories
+       G                                         D
+Where everything was as fresh as a bright blue sky
+D
+Now and then when i see her face
+    C
+She takes me away to that special place
+           G                                        D
+And if i stay too long I'd probably break down and cry
+
+
+[Chorus]
+
+A    C                   D
+Oooooh Sweet Child of Mine
+A    C                  D
+Oooooh Sweet Love of Mine
+
+
+[Instrumental]
+
+A C D
+
+
+[Verse 2]
+
+D
+She's got eyes of the bluest sky
+C
+And if they thought of rain
+G                                     D
+I'd hate to look into those eyes and see an ounce of pain
+D
+Her hair reminds me of a warm safe place
+      C
+Where as a child i'd hide
+     G                                      D
+And prey for the thunder and the rain to quietly pass me by
+
+
+[Chorus]
+A    C                  D
+Oooooh Sweet Child of Mine
+A    C                  D
+Oooooh Sweet Love of Mine
+
+[Instrumental]
+
+A C D
+A C D
+
+
+[Chorus]
+
+A    C                  D
+Oooooh Sweet Child of Mine
+A    C                  D
+Oooooh Sweet Love of Mine
+
+A    C                  D
+Oooooh Sweet Child of Mine
+A    C                  D
+Oooooh Sweet Love of Mine
+
+
+[Outro]
+D
+Where do we go?
+Cadd9
+Where do we go now?
+G
+Where do we go?
+                 D
+Sweet child o' mine
+
+
+</pre>
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+    <a href="https://www.youtube.com/watch?v=urx2-Gw9qbs" class="btn btn-info btn-block" id="menu-toggle" target="_blank">Video Tutorial</a>

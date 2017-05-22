@@ -1,0 +1,54 @@
+<audio id="player" src="<%= audio_path @chord.mp3.url%>"></audio>
+
+<%if not logged_in? %>
+<!--Case that you are NOT loggin in -->
+<% if @chord.id < 26 %>
+
+<p>
+    <strong>Chord Name:</strong>
+    <%= @chord.name %>
+</p>
+
+<button class="btn btn-default" onclick="document.getElementById('player').play()">
+    <%= image_tag @chord.chord_img.url(:large) %>
+</button>
+<% else %>
+  <h1>Error: You do not have access to this contenet</h1>
+<% end %>
+
+<% elsif not current_user.special? || current_user.speciall? %>
+<!--Case that you are loggin in -->
+
+<% if @chord.id < 66 %>
+<button class="btn btn-default" onclick="document.getElementById('player').play()">
+    <%= image_tag @chord.chord_img.url(:large) %>
+</button>
+
+<%= image_tag @chord.chord_variation.url(:large)%>
+<% else %>
+  <h1>Error: You do not have access to this contenet</h1>
+<% end %>
+
+<% else%>
+<button class="btn btn-default" onclick="document.getElementById('player').play()">
+    <%= image_tag @chord.chord_img.url(:large) %>
+</button>
+
+<%= image_tag @chord.chord_variation.url(:large) %>
+
+
+
+<% end %>
+
+<button class="btn btn-default">
+    <%= link_to 'Back', chords_path %>
+</button>
+
+<!-- <%= link_to 'Edit', edit_chord_path(@chord) %>  -->
+
+<style media="screen">
+  .positon{
+    left: 100px;
+    top: 100px;
+}
+</style>

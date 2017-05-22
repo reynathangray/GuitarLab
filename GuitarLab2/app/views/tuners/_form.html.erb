@@ -1,0 +1,38 @@
+<%= form_for @tuner, html: { multipart: true } do |f| %>
+  <% if tuner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tuner.errors.count, "error") %> prohibited this tuner from being saved:</h2>
+
+      <ul>
+      <% tuner.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tunerName %>
+    <%= f.text_field :tunerName %>
+  </div>
+
+
+  <p> 1st </p>
+      <p> <%= f.file_field :mp3_one %> </p>
+  <p> 2nd </p>
+      <p> <%= f.file_field :mp3_two %> </p>
+
+      <p> 3rd </p>
+          <p> <%= f.file_field :mp3_three %> </p>
+      <p> 4th </p>
+          <p> <%= f.file_field :mp3_four%> </p>
+
+          <p> 5th </p>
+              <p> <%= f.file_field :mp3_five %> </p>
+          <p> 6th </p>
+              <p> <%= f.file_field :mp3_six %> </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

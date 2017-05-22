@@ -1,0 +1,30 @@
+<% if logged_in? %>
+
+<h1>Welcome
+<%= link_to current_user.name, current_user %>
+</h1>
+
+
+
+<% else %>
+<h1>Please Sign In</h1>
+<% end %>
+
+
+
+<h5>
+Guitar Lab is a site to encourage knowledge and ability specifically for Guitar and Music Theory. <br>
+Become a Member to access all of GuitarLab's cool and easy to use features.<br><br>
+
+If you dont want to become a member, feel free to utilize the guitar tunner!
+</h5>
+
+
+<% if logged_in? %>
+
+
+    <% else %>
+  <h4><%= link_to "Log in", login_path%></h4>
+  <h4><%= link_to "Sign Up", signup_path%></h4>
+
+  <% end %>

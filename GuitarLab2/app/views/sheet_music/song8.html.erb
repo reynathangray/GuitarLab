@@ -1,0 +1,164 @@
+<table>
+<tr>
+
+
+      <td><button onclick="toggle('picture2')">G</button>
+         <div id="picture2" style="display:none"> <%= image_tag("G maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+           <audio src="<%= audio_path 'G Maj.mp3'%>" type="audio/mpeg" controls>
+               Your browser does not support the audio element.
+           </audio>
+         </div></td>
+
+         <td><button onclick="toggle('picture3')">A</button>
+            <div id="picture3" style="display:none"> <%= image_tag("A maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+              <audio src="<%= audio_path 'A Maj.mp3'%>" type="audio/mpeg" controls>
+                  Your browser does not support the audio element.
+              </audio>
+            </div></td>
+
+
+               <td><button onclick="toggle('picture5')">D</button>
+                  <div id="picture5" style="display:none"> <%= image_tag("D min.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+                    <audio src="<%= audio_path 'D Min.mp3'%>" type="audio/mpeg" controls>
+                        Your browser does not support the audio element.
+                    </audio>
+                  </div></td>
+
+
+</tr>
+</table>
+<script>
+
+function toggle(id) {
+   var element = document.getElementById(id);
+    if(element.style.display == "none")
+       element.style.display = "block";
+    else
+       element.style.display = "none";
+}
+
+</script>
+
+
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+<pre>
+    <span class="title"> Free Falling</span>
+Capo 3
+
+
+[Verse]
+
+         D  G     G       D  A
+She's a good  girl, loves  her   mama.
+       D G       G     D  A
+Loves Je- sus, and America    too.
+        D  G     G       D  A
+Shes a good  girl, crazy 'bout  Elvis
+       D G            G    D   A
+Loves hor- ses, and her boy-friend too, yeah yeah.
+
+
+[Instrumental]
+
+ D   G   G    D   A
+
+
+[Verse]
+
+        D  G   G       D  A
+It's a long  day living in    Reseda.
+           D  G   G        D        A
+There's a free- way runnin' through the yard.
+       D  G            G      D  A
+I'm a bad   boy 'cause I don't even  miss her.
+       D  G       G         D  A
+I'm a bad   boy for breakin' her   heart.
+
+
+[Chorus]
+
+         D  G   G    D   A
+And I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+         D  G   G    D   A
+And I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+
+
+[Verse]
+
+         D  G     G        D        A
+All the vam-  pires walkin' through the valley.
+           D  G       G     D  A
+They move west  down Ventura Boule-vard.
+             D  G        G         D    A
+And all the bad   boys are standing in  the shadows.
+         D  G         G          D   A
+And the good  girls are home with broken hearts.
+
+
+[Chorus]
+
+         D  G   G    D   A
+And I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+         D  G   G    D   A
+And I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+
+ D  G           G   D  A
+Free  fallin' now.   Free  fallin', now
+ D  G           G   D  A
+Free  fallin' now.   Free  fallin', now
+ D  G           G   D  A
+Free  fallin' now.   Free  fallin', now
+ D  G           G   D  A
+Free  fallin' now.   Free  fallin', now
+
+
+[Verse]
+
+         D  G    G     D A
+I wanna glide down over Mul- holland.
+         D  G        G     D    A
+I wanna write her, her name in  the sky.
+         D  G    G    D  A
+I wanna free  fall out into  nothin'.
+               D  G          G      D  A
+Oh, I'm gonna leave this, this world for a while.
+
+
+[Chorus]
+
+         D  G   G    D   A
+Now I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+         D  G   G    D   A
+Now I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+
+         D  G   G    D   A
+And I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+         D  G   G    D   A
+Now I'm free,
+      D     G       G    D   A
+Free fallin', fallin'
+
+   D     G       G    D   A
+Free fallin', fallin'
+   D     G       G    D   A
+Free fallin', fallin'
+   D     G       G    D   A
+Free fallin', fallin'
+
+</pre>
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+    <a href="https://www.youtube.com/watch?v=K5zukAcTGC4" class="btn btn-info btn-block" id="menu-toggle" target="_blank">Video Tutorial</a>

@@ -1,0 +1,176 @@
+<table>
+<tr>
+   <td><button onclick="toggle('picture1')">D</button>
+      <div id="picture1" style="display:none"> <%= image_tag("D maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+
+        <audio src="<%= audio_path 'D Maj.mp3'%>" type="audio/mpeg" controls>
+            Your browser does not support the audio element.
+        </audio>
+      </div></td>
+
+         <td><button onclick="toggle('picture3')">Em</button>
+            <div id="picture3" style="display:none"> <%= image_tag("E min.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+
+              <audio src="<%= audio_path 'E Maj.mp3'%>" type="audio/mpeg" controls>
+                  Your browser does not support the audio element.
+              </audio>
+            </div></td>
+
+         <td><button onclick="toggle('picture5')">G</button>
+            <div id="picture5" style="display:none"> <%= image_tag("G maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+              <audio src="<%= audio_path 'G Maj.mp3'%>" type="audio/mpeg" controls>
+                  Your browser does not support the audio element.
+              </audio>
+            </div></td>
+
+               <td><button onclick="toggle('picture2')">C</button>
+                  <div id="picture2" style="display:none"> <%= image_tag("C maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+                    <audio src="<%= audio_path 'C Maj.mp3'%>" type="audio/mpeg" controls>
+                        Your browser does not support the audio element.
+                    </audio>
+                  </div></td>
+
+                  <td><button onclick="toggle('picture4')">B</button>
+                     <div id="picture4" style="display:none"> <%= image_tag("B maj.png", :alt => "Guitar Center", :class => "sheetMusicChord") %>
+                       <audio src="<%= audio_path 'B Maj.mp3'%>" type="audio/mpeg" controls>
+                           Your browser does not support the audio element.
+                       </audio>
+                     </div></td>
+
+</tr>
+</table>
+<script>
+
+function toggle(id) {
+   var element = document.getElementById(id);
+    if(element.style.display == "none")
+       element.style.display = "block";
+    else
+       element.style.display = "none";
+}
+
+</script>
+
+
+
+
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+<pre>
+
+  <span class="title"> Hallelujah</span>
+
+[Verse]
+
+  G                 Em
+I heard there was a secret chord
+      G                   Em
+that David played and it pleased the Lord
+     C                        D        G       D
+but you don't really care for music do you?
+         G
+well it goes like this
+     C          D         Em                 C
+the fourth the fifth the minor fall and the major lift
+     D             B            Em
+the baffled king composing Hallelujah
+
+
+[Chorus]
+
+      C           Em        C          G    D    G
+Hallelujah Hallelujah Hallelujah Hallelujah
+
+
+[Verse]
+
+ G                                 Em
+well your faith was strong but you needed proof
+ G                  Em
+you saw her bathing on the roof
+    C              D          D     G         D
+her beauty and the moonlight overthrew you
+    G              C        D
+she tied you to her kitchen chair
+    Em                        C
+she broke your throne and she cut your hair
+    D                 B         Em
+and from your lips you drew a Hallelujah
+
+
+[Chorus]
+
+     C          Em         C          G D    G
+Hallelujah Hallelujah Hallelujah Hallelu  -  jah
+
+
+[Verse]
+
+ G             Em
+baby I've been here before
+     G                       Em
+i've seen this room and I've walked this floor
+  C             D      D       G           D
+i used to live alone before I knew you
+         G                     C      D
+and I've seen your flag on the marble arch
+    Em            C
+and love is not a victory march
+       D               B7           Em
+it's a cold and it's a broken Hallelujah
+
+
+[Chorus]
+
+     C         Em          C        G D   G
+Hallelujah Hallelujah Hallelujah Hallelujah
+
+
+[Verse]
+
+G                         Em
+there was a time when you let me know
+       G            Em
+what's really going on below
+    C              D        D      G          D
+but now you never show that to me do you?
+    G               C        D
+but remember when I moved in you
+        Em            C
+and the holy dove was moving too
+    D               B              Em
+and every breath we drew was Hallelujah
+
+
+[Chorus]
+
+     C          Em         C          G D   G
+Hallelujah Hallelujah Hallelujah Hallelujah
+
+
+[Verse]
+
+G               Em
+maybe there's a God above
+    G              Em
+but all I've ever learned from love
+    C               D        D       G          D
+was how to shoot at somebody who outdrew you
+    G                       C       D
+and it's not a cry that you hear at night
+     Em                 C
+it's not somebody who's seen the light
+       D               B              Em
+it's a cold and it's a broken Hallelujah
+
+
+[Chorus]
+
+     C          Em         C         G D     G
+Hallelujah Hallelujah Hallelujah Halleluuuu
+     C          Em         C         G D     G
+Hallelujah Hallelujah Hallelujah Halleluuuuujah
+
+
+</pre>
+  <a href="http://localhost:3000/masters/sheetMusic" class="btn btn-info btn-block" id="menu-toggle">Click Me For Sheet Music</a>
+    <a href="https://www.youtube.com/watch?v=o7Hj0WF7AU0" class="btn btn-info btn-block" id="menu-toggle" target="_blank">Video Tutorial</a>

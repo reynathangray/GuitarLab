@@ -1,0 +1,398 @@
+<p id="notice"><%= notice %></p>
+<!-- ................................... -->
+<!--
+<h1>Library of Chords and Scales</h1>
+ <div class="temp">
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chords.each do |chord| %>
+      <tr>
+        <td><%= chord.name %></td>
+        <td><%= link_to 'Show', chord %></td>
+        <td><%= link_to 'Edit', edit_chord_path(chord) %></td>
+        <td><%= link_to 'Destroy', chord, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<br><br><br><br>
+
+<%= link_to 'New Chord', new_chord_path %> -->
+<!-- ................................... -->
+</div>
+
+<% if logged_in?%>
+
+<% if current_user.special?%>
+
+<div class="dropdown">
+<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Major Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <% if("Major Chord").in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <%else%>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<div class="dropdown">
+<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Minor Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if ("Minor Chord").in? chord.name  %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<div class="dropdown">
+<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+    Jazz Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if "7".in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<div class="dropdown">
+<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Scales
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if "Scale".in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+<div class="dropdown">
+<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Blues Scales
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if "Blues".in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<% else %>
+
+<div class="dropdown">
+<button class="btn btn-default  btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Major Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <% if("Major Chord").in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <%else%>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<div class="dropdown">
+<button class="btn btn-default  btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Minor Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if ("Minor Chord").in? chord.name  %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<div class="dropdown">
+<button class="btn btn-default  btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Jazz Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if "7".in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<div class="dropdown">
+<button class="btn btn-default  btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Scales
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if "Scale".in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<button type="button" class="btn btn-info  btn-lg btn-lg" data-toggle="modal" data-target="#modal1">
+More Scales!</button>
+
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="regularModal" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">
+                Become a Special Member!</h4>
+        </div>
+        <div class="modal-body">
+            <p>Only Special Members of GuitarLab can access this content.
+                <br>
+                If you wish to become a Special Member, Complete Lessons
+            </p>
+            <br>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<% end %>
+
+<% else %>
+
+<div class="dropdown">
+<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Major Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <% if("Major Chord").in? chord.name %>
+                <td><%= link_to chord.name, chord %></td>
+                <%else%>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+
+<div class="dropdown">
+<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Minor Chords
+    <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @chords.each do |chord| %>
+            <tr>
+                <%  if ("Minor Chord").in? chord.name  %>
+                <td><%= link_to chord.name, chord %></td>
+                <% end %>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</ul>
+
+</div>
+<br>
+
+<button type="button" class="btn  btn-lg btn-info btn-lg" data-toggle="modal" data-target="#modal2">
+More Chords!</button>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="regularModal" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">
+                Become a Special Member!</h4>
+        </div>
+        <div class="modal-body">
+            <p>Only Members of GuitarLab can access this content.
+                <br>
+                If you wish to become a Member, Sign Up or Sign In
+            </p>
+            <br>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<% end %>

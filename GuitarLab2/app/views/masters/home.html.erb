@@ -1,0 +1,117 @@
+
+<div class="spread">
+
+
+<a class="tiptext" target="_blank" href="https://www.ultimate-guitar.com/">  <%= image_tag("UltimateGuitar.png", :alt => "Ultimate Guitar", :class => "gcImg2") %>
+  <iframe class="description"  src="https://www.ultimate-guitar.com/"></iframe>
+</a>
+
+<a class="tiptext" target="_blank" href="http://www.guitarcenter.com/">  <%= image_tag("guitarcenter.jpg", :alt => "Guitar Center", :class => "gcImg") %>
+  <iframe class="description"  src="http://mcshanedesign.co/wp-content/uploads/web-guitar-center.jpg"></iframe>
+</a>
+
+<a class="tiptext" target="_blank" href="http://www.guitarworld.com/">  <%= image_tag("GuitarWorld.png", :alt => "Guitar World", :class => "gcImg") %>
+  <iframe class="description"  src="http://4.bp.blogspot.com/-GGEbbZxEzU0/TegDqRgkyLI/AAAAAAAACyI/ZduFWfDqj5Y/s1600/Horns%2BUp%2BRocks%2BGuitar%2BWorld%2BNew%2BSite.png"></iframe>
+</a>
+
+
+<a class="tiptext" target="_blank" href="http://www.guitarplayer.com/">  <%= image_tag("GuitarPlayer.png", :alt => "Guitar Player", :class => "gcImg3") %>
+  <iframe class="description"  src="http://www.guitarplayer.com/"></iframe>
+</a>
+
+</div>
+
+<br>
+ <!---....................................................-->
+
+
+ <a class="twitter-timeline"
+   href="https://twitter.com/gibsonguitar"
+   data-width="300"
+   data-height="300">
+ Tweets by @gibsonguitar
+ </a>
+
+ <a class="twitter-timeline"
+   href="https://twitter.com/Fender"
+   data-width="520"
+   data-height="300">
+ Tweets by @Fender
+ </a>
+
+ <a class="twitter-timeline"
+   href="https://twitter.com/guitarcenter"
+   data-width="300"
+   data-height="300">
+ Tweets by @guitarcenter
+ </a>
+ <a class="twitter-timeline"
+   href="https://twitter.com/premierguitar"
+   data-width="300"
+   data-height="500">
+ Tweets by @premierguitar
+ </a>
+
+<a class="twitter-timeline"  href="https://twitter.com/search?q=Guitar" data-widget-id="856954294939078657">Tweets about Guitar</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
+<a class="twitter-timeline"
+  href="https://twitter.com/ultimateguitar"
+  data-width="300"
+  data-height="500">
+Tweets by @ultimateguitar
+</a>
+
+
+<style>
+
+.tiptext {
+    color:#069;
+    cursor:pointer;
+}
+.description {
+    display:none;
+    position:absolute;
+    border:1px solid black;
+    width:1130px;
+    height:400px;
+    align-content: bottom;
+}
+
+
+.gcImg2 {
+  height: 10%;
+  width: 10%;
+}
+.gcImg3 {
+  height: 30%;
+  width: 30%;
+}
+
+.spread {
+text-align:  center;
+}
+
+
+</style>
+
+<!-- for live preview of websites -->
+<script>
+$(".tiptext").mouseover(function() {
+    $(this).children(".description").show();
+}).mouseout(function() {
+    $(this).children(".description").hide();
+});
+</script>
+
+<!-- For Refreshing twitter feeds -->
+<script type="text/javascript">
+if(location.search.indexOf('r') < 0){
+    var hash = window.location.hash;
+    var loc = window.location.href.replace(hash, '');
+    loc += (loc.indexOf('?') < 0? '?' : '&') + 'r';
+    setTimeout(function(){window.location.href = loc + hash;}, 1000);
+}
+</script>

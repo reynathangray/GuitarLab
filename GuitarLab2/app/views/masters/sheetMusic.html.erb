@@ -1,0 +1,128 @@
+<html lang="en">
+<% if logged_in? and current_user.speciall? || current_user.special?  %>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a>
+                        SONG MENU
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song1">Sweet Caroline </a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song2">I'm Yours </a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song3">Stay With Me </a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song4">Sweet Child O' Mine </a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song5">Hallelujah</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song6">Let It Be</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song7">All of Me</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song8">Free Falling</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song9">Love Yourself</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/sheet_music/song10">Halo</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>GuitarLab Sheet Music</h1>
+
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Click Me For Sheet Music</a>
+                        <br><br><br>
+
+                          <pre>Quick Tip for Reading Sheet Music:
+
+G (strum chord)    C (strum chord)
+  Where it began,   I can't begin to knowin
+G                            D
+  But then I know it's going strong
+G                    C
+  Was it the spring,  and spring became a summer?
+G                                  D
+  Who’d have believed you'd come a-long?
+
+
+When you see the guitar chord above the song lyric, strum chord when those lyrics are sung...
+
+
+                          </pre>
+<br><br>
+
+                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Click Me For Sheet Music</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+<%else%>
+<h1>Error: You dont have acccess </h1>
+<% end %>
+
+</html>

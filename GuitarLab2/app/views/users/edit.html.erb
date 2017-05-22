@@ -1,0 +1,97 @@
+<% provide(:title, 'Edit User')%>
+<% provide(:button_text, 'Save changes')%>
+<h1>Update your profile</h1>
+
+<%= form_for @user, html: { multipart: true } do |f| %>
+
+<% if @user.errors.any? %>
+
+<% end %>
+
+<%= render 'shared/error_messages', object: @user %>
+
+<!-- code snippet: http://bootsnipp.com/snippets/featured/registration-form -->
+
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Edit Account Information
+
+                    </h3>
+                </div>
+
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+
+                                    <%= f.label :name %>
+                                    <%= f.text_field :name,  class: 'form-control'%>
+
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <%= f.label :email %>
+                                    <%= f.text_field :email, class: 'form-control' %>
+
+                                    <%= f.label :Favorite_Music %>
+                                    <%= f.text_field :faveMusic,  class: 'form-control'%>
+
+                                    <%= f.label :Bio %>
+                                    <%= f.text_field :bio,  class: 'form-control'%>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <%= f.label :profile_Picture %><br>
+                                <%= f.file_field :profpic , class: 'form-control' %>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <%= f.label :cover_Photo %><br>
+                                <%= f.file_field :coverpic , class: 'form-control' %>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+
+                                    <%= f.label :password%>
+                                    <%= f.password_field :password, class: 'form-control'%>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+
+                                    <%= f.label :password_confirmation, "Confirm Password"%>
+                                    <%= f.password_field :password_confirmation, class: 'form-control'%>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <input type="submit" value="Submit" class="btn btn-info btn-block">
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% end %>

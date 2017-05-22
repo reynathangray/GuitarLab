@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap/bootstrap-rails-tooltip
+ *= require bootstrap/bootstrap-rails-popover
+ */
+
+body {
+    background: url(GuitarLabBg1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a:visited{
+  color:inherit;
+}
+
+.profilePic {
+    height: 40px;
+}
+
+ul li {
+    text-decoration: none;
+}
+
+.gcImg {
+    height: 20%;
+    width: 20%;
+}
+
+.sheetMusicChord {
+
+
+}
+/*iframe CSS*/
+
+.box {
+    display: none;
+    width: 100%;
+}
+
+a:hover+.box, .box:hover {
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+
+.GuitarTuner img {
+
+    height: 505px;
+    width: auto;
+}
+
+
+.GuitarTuner {
+
+  margin: 10;
+  padding-right:10px ;
+  background: rgba(225, 225, 225, 0.3);
+  border: 2px solid;
+  border-radius: 25px;
+  float: left ;
+
+}
+
+#button1 button{
+position: absolute;
+top: 300px;
+
+}
+
+#button2 button{
+position: absolute;
+top: 390px;
+}
+
+#button3 button{
+position: absolute;
+top: 487px;
+}
+
+#button4 button{
+position: absolute;
+top: 300px;
+margin-left: 300px;
+}
+
+#button5 button{
+position: absolute;
+top: 390px;
+margin-left: 300px;
+}
+
+#button6 button{
+position: absolute;
+top: 487px;
+margin-left: 300px;
+}

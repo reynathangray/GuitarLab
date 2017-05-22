@@ -1,0 +1,39 @@
+<%= form_for @chord, html: { multipart: true } do |f| %>
+  <% if chord.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chord.errors.count, "error") %> prohibited this chord from being saved:</h2>
+
+      <ul>
+      <% chord.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+
+  <p> Chord img upload</p>
+      <p> <%= f.file_field :chord_img %> </p>
+
+      <p> <%= f.file_field :chord_variation %> </p>
+
+      <p><%= f.submit "Submit" %></p>
+      
+      <p>Audio upload</p>
+      <div class="field">
+      <%= f.label :mp3 %>
+      <%= f.file_field :mp3 %>
+      </div>
+
+
+      <div class="actions">
+        <%= f.submit class: "button button_highlight Button_block"%>
+      </div>
+
+
+<% end %>

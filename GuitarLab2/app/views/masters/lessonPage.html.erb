@@ -1,0 +1,447 @@
+<div class="container">
+    <div class="row">
+        <section>
+            <div class="wizard">
+                <div class="wizard-inner">
+                    <div class="connecting-line"></div>
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <li role="presentation" class="active">
+                            <a href="#Lesson1" data-toggle="tab" aria-controls="Lesson1" role="tab" title="Lesson 1">
+                                <span class="round-tab">
+                                    <%= image_tag("Lesson1.png", size: "56x56", class: "round-tab") %>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="disabled">
+                            <a href="#Lesson2" data-toggle="tab" aria-controls="Lesson2" role="tab" title="Lesson 2">
+                                <span class="round-tab">
+                                    <i>
+                                        <%= image_tag("Lesson2.png", size: "56x56") %>
+                                    </i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#Lesson3" data-toggle="tab" aria-controls="Lesson3" role="tab" title="Lesson 3">
+                                <span class="round-tab">
+                                    <i>
+                                        <%= image_tag("Lesson3.png", size: "56x56") %>
+                                    </i>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="disabled">
+                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-ok"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form role="form">
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="Lesson1">
+                            <h1>
+                                <b>Lesson 1:</b>
+                                <small>PARTS OF A GUITAR</small>
+                            </h1>
+
+                            <pre><h5><p>
+It is important to understand the anatomy of your instrument.
+In knowing the parts and interworking’s of your instrument,
+you can assess if areas of your instrument are damaged or working properly.
+Guitars are no exception.
+
+To first understand the guitar, we must consider that there are two main kinds
+of guitar. There is the acoustic guitar and the electric guitar.
+
+<b>THE NECK:</b>
+
+      <b>The head:</b> the rectangular structure at the top
+
+      <b>Tuning Keys and Tuning Pegs:</b> Nobs on the top
+
+      <b>The Nut:</b> The bar separating the head from the fret board
+
+      <b>The Frets:</b> The rectangular divisions along the fret board
+
+      <b>The Fret Board:</b> The long piece of wood holding all the frets
+
+
+<b>ACOUSTIC BODY:</b>
+
+      <b>The Sound Hole:</b> hollowed out part of the body
+
+      <b>The Saddle:</b> The thin white strip the strings rest on
+
+      <b>The Bridge Pins:</b> These hole the strings in place
+
+      <b>Strap Buttons:</b> nobs where the guitar strap is secured
+
+      <%= image_tag("acustic.png", style:"height: 38%; LEFT:500px ; top:300px ;position: absolute;") %>
+
+
+<b>ELECTRIC BODY</b>
+
+      <b>The Pickups:</b> The pickups are the microphones of the
+      guitar, picking up the vibrations of the strings and moving
+      them to your amplifier
+
+      <b>Volume Knobs:</b> The Volume knobs control how much volume
+      or output is coming from your pickups.
+
+      <b>Tone Knobs:</b> The Tone knobs controls the tone for the
+      pickups, meaning you can control how much treble there is.
+
+      <b>Pickup Selector:</b> Most guitars have a three-way style
+      toggle switch, and it controls which pickup is active.
+      If you toggle the switch down, the bridge pickup is active,
+      which is naturally has more treble because it is closer to
+      the
+      end of the strings. If the toggle switch is in the middle,
+      both
+      pickups are active which gives a medium tone. If the toggle
+      is up, then the neck pickup is active, which is generally a more
+      mellow tone. There are a couple of different types of pickup
+      selector switch types, including the toggle switch, or if you have
+      a Stratocaster guitar, you may have a 3 or 5-way blade switch.
+
+<%= image_tag("electric.png", style:"height: 33%; LEFT:519px ; top:800px ;position: absolute;") %>
+</p></h5></pre>
+
+                            <ul class="list-inline pull-right">
+                                <li>
+                                    <button type="button" class="btn btn-primary next-Lesson">Next: Lesson 2</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="Lesson2">
+                          <h1>
+                              <b>Lesson 2:</b>
+                              <small>Circle of Fifths</small>
+                          </h1>
+
+                          <pre><h5><p>
+The Circle of Fifths can help you easily construct hundreds of Chord Progressions, Lead Lines,
+Harmonies, and just about anything else… once you get the hang of it.
+
+<b>Here's the Circle of Fifths:</b>
+<%= image_tag("circle_of_fifths.jpg", style:"height: 16%; LEFT:444px ; top:250px ;position: absolute;") %>
+
+Look at the notes arranged in a circle. It out help if you
+practice saying them out loud and memorizing the order.
+
+Notice that these notes are similarly placed to the
+numbers on a clock, where C is 12 and G is 1 and so own.
+
+If you want to reference the Circle of Fifths,
+it and you don’t have it memorized, it is simple to r
+econstruct on paper.
+
+The method to follow is:
+
+    1.	Start with C
+    2.	Identify the 5th note from C
+        <small>NOTE: A “5th” is 7 half steps from a relative note </small>
+    3.	Place that note clockwise to C
+    4.	Repeat these steps.
+
+<%= image_tag("5th.png", style:"height: 11%; LEFT:444px ; top:500px ;position: absolute;") %>
+
+The Pattern you will create once you find
+your way back to C, is the circle of Fifths.
+At first this is difficult, but with practice, it gets easier.
+
+When looking at the Circle of Fifths and looking at the notes
+We can use them to represent notes, chords, or keys.
+
+<b>NOTES:</b>
+We can use 1-3-5 to build any major chord.
+Let’s suppose you want to create a C Major Chord.
+
+The first note is obvious: C
+The second, is E
+And the third is the FIFTH: F
+
+Thus, the C major Chord is: C E F
+
+<b>CHORDS:</b>
+Let’s suppose that C now represents the C Major Chord.
+And we are in the Key of Bb Major.
+
+The Root Chord is the Bb and the Dominant Chord is the 5 chord.
+To identify this chord, look to the Circle of Fifths.
+The 5 chord is important because it provides balance for chord progressions.
+The 5 chord for the Key of Bb is F
+
+<b>KEYS</b>
+You can use the Circle of Fifths as a map of Keys.
+This is helpful for Writing music.
+
+The circle will show you what keys are like each other.
+For example, because G sits next to C on the Circle, we know that
+they have similar notes in their respective keys.
+This can be useful for key changes when writing music.
+
+The Circle will also show you how many flats or sharps there are in a Scale/Key
+
+Let’s say we are in the Key of G. We know that the Key of G has 1 sharp in it
+because it is 1 position away from C (which is the starting point on the Circle of Fifths)
+
+
+                            </p></h5></pre>
+
+                            <ul class="list-inline pull-right">
+                                <li>
+                                    <button type="button" class="btn btn-default prev-Lesson">Lesson 1</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-primary next-Lesson">Next: Lesson 3</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="Lesson3">
+                          <h1>
+                              <b>Lesson 3:</b>
+                              <small>Playing Guitar</small>
+                          </h1>
+
+                            <pre><h5><p>
+
+Build Any Major Scale on Guitar
+<b>Tips: </b>
+
+When learning Scales, it is important to do them slowly and accurately.
+Play with fingertips
+Learn one position at a time
+<small>Just make sure you master one before you move to another</small>
+You start and end on the lowest root note.
+Think: Do Re Me Fa So La Te Do
+
+The pattern to play any major scale on guitar
+<b>red is ROOT note</b>
+<%= image_tag("MajorPattern.png", style:"height: 20%; LEFT:50px ; top:422px ;position: absolute;") %>
+
+
+
+
+
+
+
+The pattern to play any minor scale on guitar
+<%= image_tag("MinorPattern.png", style:"height: 20%; LEFT:50px ; top:585px ;position: absolute;") %>
+
+                            </p></h5></pre>
+
+                            <ul class="list-inline pull-right">
+                                <li>
+                                    <button type="button" class="btn btn-default prev-Lesson">Lesson 2</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-primary btn-info-full next-Lesson">Finish</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="complete">
+                            <h3>Complete</h3>
+                            <pre><p><h4>
+
+                              You have successfully completed all Lessons.
+                              The code to update your account is: GUITAR
+                            </p></h4>
+                          </pre>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+
+<style media="screen">
+
+    .Lesson1 {
+
+        background-image: url("Lesson1.png");
+    }
+    .wizard {
+        margin: 20px auto;
+        background: #fff;
+    }
+
+    .wizard .nav-tabs {
+        position: relative;
+        margin: 40px auto 0;
+        border-bottom-color: #e0e0e0;
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative;
+    }
+
+    .connecting-line {
+        height: 2px;
+        background: #e0e0e0;
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 50%;
+        z-index: 1;
+    }
+    .wizard .nav-tabs > li.active > a,
+    .wizard .nav-tabs > li.active > a:focus,
+    .wizard .nav-tabs > li.active > a:hover {
+        color: #555555;
+        cursor: default;
+        border: 0;
+        border-bottom-color: transparent;
+    }
+
+    span.round-tab {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        display: inline-block;
+        border-radius: 100px;
+        background: #fff;
+        border: 2px solid #e0e0e0;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+    span.round-tab i {
+        color: #555555;
+    }
+    .wizard li.active span.round-tab {
+        background: #fff;
+        border: 2px solid #5bc0de;
+
+    }
+    .wizard li.active span.round-tab i {
+        color: #5bc0de;
+    }
+    span.round-tab:hover {
+        color: #333;
+        border: 2px solid #333;
+    }
+
+    .wizard .nav-tabs > li {
+        width: 25%;
+    }
+    .wizard li:after {
+        content: " ";
+        position: absolute;
+        left: 46%;
+        opacity: 0;
+        margin: 0 auto;
+        bottom: 0;
+        border: 5px solid transparent;
+        border-bottom-color: #5bc0de;
+        transition: 0.1s ease-in-out;
+    }
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 46%;
+        opacity: 1;
+        margin: 0 auto;
+        bottom: 0;
+        border: 10px solid transparent;
+        border-bottom-color: #5bc0de;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 70px;
+        height: 70px;
+        margin: 20px auto;
+        border-radius: 100%;
+        padding: 0;
+    }
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+    .wizard .tab-pane {
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .wizard h3 {
+        margin-top: 0;
+    }
+    @media( max-width : 585px ) {
+
+        .wizard {
+            width: 90%;
+            height: auto !important;
+        }
+
+        span.round-tab {
+            font-size: 16px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .wizard .nav-tabs > li a {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .wizard li.active:after {
+            content: " ";
+            position: absolute;
+            left: 35%;
+        }
+    }
+
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Initialize tooltips
+        $('.nav-tabs > li a[title]').tooltip();
+
+        //Wizard
+        $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+            var $target = $(e.target);
+
+            if ($target.parent().hasClass('disabled')) {
+                return false;
+            }
+        });
+
+        $(".next-Lesson").click(function (e) {
+
+            var $active = $('.wizard .nav-tabs li.active');
+            $active.next().removeClass('disabled');
+            nextTab($active);
+
+        });
+        $(".prev-Lesson").click(function (e) {
+
+            var $active = $('.wizard .nav-tabs li.active');
+            prevTab($active);
+
+        });
+    });
+
+    function nextTab(elem) {
+        $(elem).next().find('a[data-toggle="tab"]').click();
+    }
+    function prevTab(elem) {
+        $(elem).prev().find('a[data-toggle="tab"]').click();
+    }
+</script>

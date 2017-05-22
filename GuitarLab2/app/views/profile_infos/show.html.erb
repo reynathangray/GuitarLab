@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @profile_info.firstName %>
+</p>
+
+<p>
+  <strong>Lasname:</strong>
+  <%= @profile_info.lasName %>
+</p>
+
+<p>
+  <strong>Favemusic:</strong>
+  <%= @profile_info.faveMusic %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @profile_info.bio %>
+</p>
+
+<%= link_to 'Edit', edit_profile_info_path(@profile_info) %> |
+<%= link_to 'Back', profile_infos_path %>
